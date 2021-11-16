@@ -66,16 +66,16 @@
 
 .mode csv
 .separator ","
-.import <DIRECT PATH TO CSV FILES/talenti/reviews.csv> talenti
-.import <DIRECT PATH TO CSV FILES/talenti/reviews.csv> talentiReviews
-.import <DIRECT PATH TO CSV FILES/bj/products.csv> bj
-.import <DIRECT PATH TO CSV FILES/bj/reviews.csv> bjReviews
-.import <DIRECT PATH TO CSV FILES/hd/products.csv> hd
-.import <DIRECT PATH TO CSV FILES/hd/reviews.csv> hdReviews
-.import <DIRECT PATH TO CSV FILES/breyers/products.csv> breyers
-.import <DIRECT PATH TO CSV FILES/hd/reviews.csv> breyersReviews
-.import <DIRECT PATH TO CSV FILES/combined/products.csv> combinedProducts
-.import <DIRECT PATH TO CSV FILES/combined/reviews.csv> combinedReviews
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/talenti/products.csv talenti
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/talenti/reviews.csv talentiReviews
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/bj/products.csv bj
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/bj/reviews.csv bjReviews
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/hd/products.csv hd
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/hd/reviews.csv hdReviews
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/breyers/products.csv breyers
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/hd/reviews.csv breyersReviews
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/combined/products.csv combinedProducts
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/combined/reviews.csv combinedReviews
 
 
 
