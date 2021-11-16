@@ -74,7 +74,7 @@
 .import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/hd/products.csv hd
 .import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/hd/reviews.csv hdReviews
 .import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/breyers/products.csv breyers
-.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/hd/reviews.csv breyersReviews
+.import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/breyers/reviews.csv breyersReviews
 .import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/combined/products.csv combinedProducts
 .import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/combined/reviews.csv combinedReviews
 
