@@ -66,6 +66,7 @@
 
 .mode csv
 .separator ","
+.headers on
 .import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/talenti/products.csv talenti
 .import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/talenti/reviews.csv talentiReviews
 .import /Users/Duy/Desktop/CSE/CSE_111/ice-cream-ratings/data/bj/products.csv bj

@@ -1,3 +1,17 @@
+-- drop table talenti;
+-- drop table talentiReviews;
+-- drop table breyers;
+-- drop table breyersReviews;
+-- drop table hd;
+-- drop table hdReviews;
+-- drop table bj;
+-- drop table bjReviews;
+-- drop table combinedProducts;
+-- drop table combinedReviews;
+-- -- drop table productFlavor;
+-- -- drop table flavor;
+-- -- drop table productIngredient;
+-- -- drop table ingredient;
 
 create table talenti (
     tp_key char(32) primary key,
@@ -9,7 +23,7 @@ create table talenti (
 );
 
 create table talentiReviews (
-    tr_key char(32) primary key,
+    tr_key char(32) not null,
     tr_author char(32) not null,
     tr_date date not null,
     tr_stars decimal(5,0),
@@ -67,12 +81,12 @@ create table hdReviews (
 create table bj (
     bjp_key char(32) primary key,
     bjp_name char(32) not null,
+    --special for bj
+    bjp_subhead char(200) not null,
     bjp_description char(200) not null,
     bjp_rating decimal(5,0),
     bjp_rating_count decimal(5,0),
-    bjp_ingredients char(200) not null,
-    --special for bj
-    bjp_subhead char(200) not null
+    bjp_ingredients char(200) not null
 );
 
 create table bjReviews (
@@ -90,12 +104,12 @@ create table combinedProducts (
     cp_brand char(32) not null,
     cp_key char(32) primary key,
     cp_name char(32) not null,
+    --special for bj
+    cp_subhead char(200) null,
     cp_description char(200) not null,
     cp_rating decimal(5,0),
     cp_rating_count decimal(5,0),
-    cp_ingredients char(200) not null,
-    --special for bj
-    cp_subhead char(200) not null 
+    cp_ingredients char(200) not null
 );
 
 create table combinedReviews (
@@ -115,22 +129,22 @@ create table combinedReviews (
     cr_likes decimal(5,0)
 );
 
-create table productFlavor (
-    pf_productkey char(32) not null,
-    pf_flavorkey char(32) primary key
-);
+-- create table productFlavor (
+--     pf_productkey char(32) not null,
+--     pf_flavorkey char(32) primary key
+-- );
 
-create table flavor (
-    f_name char(32) not null,
-    f_flavorkey char(32) primary key
-);
+-- create table flavor (
+--     f_name char(32) not null,
+--     f_flavorkey char(32) primary key
+-- );
 
-create table productIngredient (
-    pi_productkey char(32) not null,
-    pi_flavorkey char(32) primary key
-);
+-- create table productIngredient (
+--     pi_productkey char(32) not null,
+--     pi_flavorkey char(32) primary key
+-- );
 
-create table ingredient (
-    i_name char(32) not null,
-    i_flavorkey char(32) primary key
-)
+-- create table ingredient (
+--     i_name char(32) not null,
+--     i_flavorkey char(32) primary key
+-- )
