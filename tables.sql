@@ -8,10 +8,10 @@ drop table bj;
 drop table bjReviews;
 drop table combinedProducts;
 drop table combinedReviews;
--- drop table productFlavor;
--- drop table flavor;
--- drop table productIngredient;
--- drop table ingredient;
+drop table productFlavor;
+drop table flavor;
+drop table productIngredient;
+drop table ingredient;
 
 create table talenti (
     tp_key char(32) primary key,
@@ -129,22 +129,67 @@ create table combinedReviews (
     cr_likes decimal(5,0)
 );
 
--- create table productFlavor (
---     pf_productkey char(32) not null,
---     pf_flavorkey char(32) primary key
--- );
+create table productFlavor (
+    pf_brand char(32) not null,
+    pf_productkey char(32) not null,
+    pf_name char(32) not null,
+    --special for bj
+    pf_subhead char(200) null,
+    pf_description char(200) not null,
+    pf_rating decimal(5,0),
+    pf_rating_count decimal(5,0),
+    pf_ingredients char(200) not null,
+    pf_flavorkey int identity(1,1) primary key
 
--- create table flavor (
---     f_name char(32) not null,
---     f_flavorkey char(32) primary key
--- );
+    -- pf_productkey char(32) not null,
+    -- pf_flavorkey char(32) primary key
+);
 
--- create table productIngredient (
---     pi_productkey char(32) not null,
---     pi_flavorkey char(32) primary key
--- );
+create table flavor (
+    f_brand char(32) not null,
+    f_productkey char(32) not null,
+    f_name char(32) not null,
+    --special for bj
+    f_subhead char(200) null,
+    f_descriptionname char(200) not null,
+    f_rating decimal(5,0),
+    f_rating_count decimal(5,0),
+    f_ingredients char(200) not null,
+    f_flavorkey int identity(1,1) primary key
 
--- create table ingredient (
---     i_name char(32) not null,
---     i_flavorkey char(32) primary key
--- )
+
+    -- f_name char(32) not null,
+    -- f_flavorkey char(32) primary key
+);
+
+create table productIngredient (
+    pi_brand char(32) not null,
+    pi_productkey char(32) not null,
+    pi_name char(32) not null,
+    --special for bj
+    pi_subhead char(200) null,
+    pi_description char(200) not null,
+    pi_rating decimal(5,0),
+    pi_rating_count decimal(5,0),
+    pi_ingredients char(200) not null,
+    pi_ingredientkey int identity(1,1) primary key
+
+    -- pi_productkey char(32) not null,
+    -- pi_ingredientkey char(32) primary key
+);
+
+create table ingredient (
+    i_brand char(32) not null,
+    i_productkey char(32) not null,
+    i_name char(32) not null,
+    --special for bj
+    i_subhead char(200) null,
+    i_description char(200) not null,
+    i_rating decimal(5,0),
+    i_rating_count decimal(5,0),
+    i_ingredientname char(200) not null,
+    i_ingredientkey int identity(1,1) primary key
+
+    -- i_name char(32) not null,
+    -- i_ingredientkey char(32) primary key
+)

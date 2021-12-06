@@ -29,7 +29,6 @@ delete from combinedProducts where cp_key = "70_hd";
 
 ---------------------------- GET -------------------------
 
-
 --8 looking for a specific brand, like breyer's 
 select cp_name
 from combinedProducts
