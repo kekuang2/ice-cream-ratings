@@ -8,10 +8,12 @@ drop table bj;
 drop table bjReviews;
 drop table combinedProducts;
 drop table combinedReviews;
+
 drop table productFlavor;
 drop table flavor;
 drop table productIngredient;
 drop table ingredient;
+
 
 create table talenti (
     tp_key char(32) primary key,
